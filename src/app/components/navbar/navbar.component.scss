@@ -1,0 +1,93 @@
+div {
+  width: 100%;
+  height: auto;
+
+}
+
+
+nav {
+  background-color: #333;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  li {
+    float: left;
+  }
+
+  li h2 {
+    //display: block;
+    //text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darkblue;
+    }
+  }
+
+  li a:hover {
+    background-color: #111;
+  }
+}
+
+li {
+  display: flex;
+  align-items: center;
+
+  button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    gap: 5%;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darkblue;
+    }
+  }
+}
+
+nav ul li h2:hover {
+  color: #ddd;
+  cursor: pointer;
+}
+
+img{
+  width: 60px;
+  height: 60px;
+  display: block;
+  border-radius: 12px;
+  margin: 0;
+}
+#userBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  transition: background-color 0.3s;
+
+}

@@ -1,0 +1,21 @@
+<nav>
+  <ul>
+    <div>
+      <li><h2 [routerLink]="['/home']">Home</h2></li>
+      <li><h2 [routerLink]="['/products']">Products</h2></li>
+      <li><h2 [routerLink]="['/cart']">Cart</h2></li>
+    </div>
+    <li>
+      <div id="userBox">
+        @if (authService.currentUser) {
+          <img [src]="authService.currentUser.photoURL">
+          <label>{{authService.currentUser.displayName}}</label>
+        }
+      </div>
+      <button (click)="this.authService.signin()">Sign in</button>
+      <button (click)="this.storeService.deleteAllFromCart();this.authService.signout()">Sign out</button>
+    </li>
+
+  </ul>
+
+</nav>

@@ -1,0 +1,7 @@
+<h1>Your cart</h1>
+@for (product of this.storeService.cart; track $index) {
+  <app-cart [product]="product"></app-cart>
+}
+@if (this.storeService.cart.length > 0) {
+  <app-totalcost [total]="storeService.total" ></app-totalcost>
+}
